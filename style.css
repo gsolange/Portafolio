@@ -1,0 +1,215 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+  list-style: none;
+  text-decoration: none;
+  background-color: rgb(0, 0, 0);
+  color: aliceblue;
+}
+
+.header__maincontainer {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+  padding: 30px;
+  box-shadow: 0 0 29px 0 rgba(255, 255, 255, 0.25);
+}
+
+.header__list {
+  display: flex;
+  margin: 5px 5px;
+  padding: 0 5px;
+  margin-right: 450px;
+}
+
+.header__a {
+  font-size: 16px;
+  margin: 20px;
+  color: rgb(255, 255, 255);
+}
+
+.button__purple {
+  background-color: hotpink;
+  border-radius: 30px;
+  padding: 9px 16px;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+}
+
+.aboutme__maincontainer {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 200px 0px 200px 200px;
+}
+
+.aboutme__childcontainer {
+  flex-direction: column;
+  align-self: center;
+  text-align: left;
+}
+
+.aboutme__hi {
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+.aboutme__name {
+  color: hotpink;
+  font-size: 50px;
+  font-weight: 900;
+}
+
+.aboutme__what {
+  color: dimgrey;
+  font-size: 16px;
+  margin-bottom: 50px;
+}
+
+.aboutme__img {
+  width: 75%;
+  filter: hue-rotate(430deg);
+}
+
+.aboutme__maincontainer .aboutme__childcontainer .button__purple {
+  background-color: hotpink;
+  border-radius: 30px;
+  padding: 16px 30px;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+}
+
+.knowledge__maincontainter,
+.project__maincontainer {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.knowledge__childcontainer,
+.project__mainchild {
+  display: flex;
+  flex-direction: column;
+}
+
+.knowledge__title,
+.project__tittle,
+.contact__lefttittle {
+  font-size: 50px;
+  font-weight: 900;
+  text-align: center;
+}
+.knowledge__what,
+.project__what {
+  color: dimgrey;
+  font-size: 16px;
+  margin: 30px 750px;
+  text-align: center;
+}
+
+.knowledge__grid {
+  display: flex;
+  justify-content: center;
+  margin: 0px 600px;
+  flex-wrap: wrap;
+}
+
+.knowledge__gridchild {
+  border: solid hotpink 1px;
+  border-radius: 10px;
+  width: 200px;
+  padding: 50px;
+  margin: 10px;
+}
+
+.knowledge__gridchild i {
+  font-size: 70px;
+}
+
+.quote__maincontainer {
+  margin: 150px 0px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.quote__maincontainer i {
+  font-size: 100px;
+  color: hotpink;
+}
+
+.quote__what {
+  font-size: 20px;
+  margin: 40px 500px;
+  text-align: center;
+  font-weight: 300;
+}
+
+.quote__author {
+  font-size: 25px;
+  font-weight: bolder;
+  color: hotpink;
+  text-align: center;
+}
+
+.project__maingrid {
+  display: flex;
+  justify-content: center;
+  margin: 0px 300px;
+  flex-wrap: wrap;
+}
+
+.project__maingrid img {
+  height: 300px;
+  width: 300px;
+}
+
+.project__a {
+  border: solid hotpink 1px;
+  border-radius: 10px;
+  width: 350px;
+  height: 350px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.project__name {
+  font-weight: bold;
+}
+
+.contact__maincontainer {
+  display: flex;
+  justify-content: space-evenly;
+  height: 600px;
+  margin: 100px 400px 0px 400px;
+  border: solid hotpink 1px;
+  border-radius: 5px;
+}
+
+.contact__left {
+  align-self: center;
+  text-align: left;
+}
+
+.contact__lefttittle {
+  text-align: left;
+  margin: 30px 0px 20px 50px;
+}
+
+.contact__leftdescription {
+  margin: 20px 200px 20px 50px;
+}
+
+.contact__li a i {
+  color: hotpink;
+  margin: 15px 15px 15px 80px;
+}
+
+.contact__right {
+  display: flex;
+  align-self: center;
+
+  margin: 20px 100px 20px 50px;
+}
