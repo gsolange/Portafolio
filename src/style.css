@@ -2,19 +2,25 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Poppins;
+  font-family: "Montserrat", sans-serif;
   list-style: none;
   text-decoration: none;
-  background-color: rgb(0, 0, 0);
-  color: aliceblue;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1;
 }
 
 .header__maincontainer {
+  background-color: rgb(223, 223, 223);
   display: flex;
   justify-content: flex-end;
   margin-bottom: 10px;
   padding: 30px;
-  box-shadow: 0 0 29px 0 rgba(255, 255, 255, 0.25);
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
 }
 
 .header__list {
@@ -27,7 +33,7 @@
 .header__a {
   font-size: 16px;
   margin: 20px;
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
 }
 
 .button__purple {
@@ -82,23 +88,36 @@
 
 .knowledge__maincontainter,
 .project__maincontainer {
-  margin-top: 100px;
   text-align: center;
+  padding: 110px 40px 130px;
 }
 
-.knowledge__childcontainer,
-.project__mainchild {
+.knowledge__childcontainer {
   display: flex;
   flex-direction: column;
 }
 
-.knowledge__title,
-.project__tittle,
-.contact__lefttittle {
+.project__mainchild {
+  padding: 110px 40px 130px;
+  display: flex;
+  flex-direction: column;
+}
+
+.project__tittle {
+  color: black;
   font-size: 50px;
   font-weight: 900;
   text-align: center;
 }
+
+.knowledge__title,
+.contact__lefttittle {
+  font-size: 50px;
+  font-weight: 900;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
 .knowledge__what,
 .project__what {
   color: dimgrey;
@@ -110,14 +129,15 @@
 .knowledge__grid {
   display: flex;
   justify-content: center;
-  margin: 0px 600px;
+  align-self: center;
   flex-wrap: wrap;
+  max-width: 1000px;
 }
 
 .knowledge__gridchild {
   border: solid hotpink 1px;
   border-radius: 10px;
-  width: 200px;
+  width: 260px;
   padding: 50px;
   margin: 10px;
 }
@@ -126,13 +146,19 @@
   font-size: 70px;
 }
 
+.knowledge__titlegrid {
+  padding-top: 30px;
+  color: rgb(0, 0, 0);
+}
+
 .quote__maincontainer {
-  margin: 150px 0px;
-  height: 400px;
+  background-color: rgb(223, 223, 223);
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
   text-align: center;
+  height: 600px;
 }
 
 .quote__maincontainer i {
@@ -141,10 +167,11 @@
 }
 
 .quote__what {
+  color: rgb(0, 0, 0);
   font-size: 20px;
-  margin: 40px 500px;
-  text-align: center;
+  margin-top: 50px;
   font-weight: 300;
+  max-width: 800px;
 }
 
 .quote__author {
@@ -152,6 +179,7 @@
   font-weight: bolder;
   color: hotpink;
   text-align: center;
+  margin-top: 50px;
 }
 
 .project__maingrid {
@@ -164,6 +192,7 @@
 .project__maingrid img {
   height: 300px;
   width: 300px;
+  filter: hue-rotate(430deg);
 }
 
 .project__a {
@@ -181,35 +210,106 @@
 
 .contact__maincontainer {
   display: flex;
-  justify-content: space-evenly;
   height: 600px;
-  margin: 100px 400px 0px 400px;
+  margin: 0px 400px 0px 400px;
   border: solid hotpink 1px;
   border-radius: 5px;
+  background-color: rgb(255, 255, 255);
 }
 
 .contact__left {
+  height: 100%;
   align-self: center;
   text-align: left;
+  width: 50%;
+  margin: 50px;
 }
 
 .contact__lefttittle {
+  color: black;
   text-align: left;
-  margin: 30px 0px 20px 50px;
-}
-
-.contact__leftdescription {
-  margin: 20px 200px 20px 50px;
+  margin-top: 50px;
 }
 
 .contact__li a i {
   color: hotpink;
-  margin: 15px 15px 15px 80px;
+  margin: 15px 15px 15px 40px;
 }
 
 .contact__right {
+  height: 100%;
+  display: flex;
+  text-align: left;
+  align-self: center;
+  flex-direction: column;
+  width: 50%;
+  margin: 50px;
+}
+
+.form-fila {
   display: flex;
   align-self: center;
+  flex-direction: row;
+  width: 100%;
+}
 
-  margin: 20px 100px 20px 50px;
+.background {
+  background-color: rgb(223, 223, 223);
+  padding: 110px 40px 130px;
+}
+
+.name-fila {
+  justify-content: space-between;
+}
+
+input,
+textarea {
+  width: 100%;
+  border-radius: 20px;
+  background-color: #f6f7fb;
+  border: none;
+}
+
+input {
+  padding: 12px;
+}
+
+label {
+  line-height: 50px;
+}
+
+.name-fila-input {
+  width: 75%;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 20px 60px;
+  text-align: center;
+}
+
+.footer__list,
+.footer__ul {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.footer__li {
+  margin: 10px;
+}
+
+.footer__li a i {
+  display: block;
+  width: 2.7rem;
+  height: 2.7rem;
+  background-color: hotpink;
+  color: white;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  line-height: 2.7rem;
+  transition: 0.1s;
 }

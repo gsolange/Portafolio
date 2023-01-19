@@ -35,13 +35,13 @@
       <nav class="header__childcontainer">
         <ul class="header__list">
           <li class="header__childlist">
-            <a href="#about" class="header__a">HOLA</a>
+            <a href="#" class="header__a">HOLA</a>
           </li>
           <li class="header__childlist">
-            <a href="#skills" class="header__a">CONOCIMIENTOS</a>
+            <a href="#knowledge" class="header__a">CONOCIMIENTOS</a>
           </li>
           <li class="header__childlist">
-            <a href="#projects" class="header__a">PROYECTOS</a>
+            <a href="#project" class="header__a">PROYECTOS</a>
           </li>
           <li class="header__childlist">
             <a href="#contact" class="button__purple">CONTACTO</a>
@@ -50,7 +50,8 @@
       </nav>
     </header>
     <main>
-      <section class="aboutme__maincontainer">
+      <!-- About Me -->
+      <section class="aboutme__maincontainer" id="aboutme">
         <div class="aboutme__childcontainer">
           <p class="aboutme__hi">¡Hola! Soy</p>
           <h1 class="aboutme__name">Ada Lovelace</h1>
@@ -67,8 +68,8 @@
           />
         </figure>
       </section>
-
-      <section class="knowledge__maincontainter">
+      <!-- Knowledge -->
+      <section class="knowledge__maincontainter" id="knowledge">
         <div class="knowledge__childcontainer">
           <h2 class="knowledge__title">Mis conocimientos</h2>
           <p class="knowledge__what">
@@ -103,8 +104,8 @@
           </div>
         </div>
       </section>
-
-      <section class="quote__maincontainer">
+      <!-- Quote -->
+      <section class="quote__maincontainer" id="quote">
         <i class="fas fa-quote-right quote-icon"></i>
         <blockquote>
           <p class="quote__what">
@@ -116,7 +117,8 @@
         </blockquote>
         <h2 class="quote__author">Someone</h2>
       </section>
-      <section class="project__maincontainer">
+      <!-- Proyect -->
+      <section class="project__maincontainer" id="project">
         <div class="project__mainchild">
           <h2 class="project__tittle">Mis proyectos</h2>
           <p class="project__what">
@@ -205,51 +207,116 @@
           </div>
         </div>
       </section>
-    </main>
-    <footer class="contact__maincontainer">
-      <section class="contact__left">
-        <h2 class="contact__lefttittle">Contactame</h2>
-        <p class="contact__leftdescription">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quo
-          nobis voluptatum tenetur! Id, nesciunt? Modi quasi repudiandae quam
-          hic quo, qui cumque nam voluptates, ipsam, tempora eaque numquam
-          eligendi.
-        </p>
-        <section>
-          <ul class="contact__ul">
-            <li class="contact__li">
-              <a href="">
-                <i class="fab fa-twitter contact-social-icon"></i>@</a
-              >
-            </li>
-            <li class="contact__li">
-              <a href="">
-                <i class="fab fa-github-alt contact-social-icon"></i>gsolange</a
-              >
-            </li>
-            <li class="contact__li">
-              <a href="">
-                <i class="fab fa-linkedin-in contact-social-icon"></i
-                >/nsolangegutierrez</a
-              >
-            </li>
-            <li class="contact__li">
-              <a href="">
-                <i class="fas fa-envelope contact-social-icon"></i
-                >gnsolange@gmail.com</a
-              >
-            </li>
-          </ul>
+      <!-- Contact -->
+      <section class="background" id="contact">
+        <section class="contact__maincontainer">
+          <section class="contact__left">
+            <h2 class="contact__lefttittle">Contactame</h2>
+            <p class="contact__leftdescription">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quo
+              nobis voluptatum tenetur! Id, nesciunt? Modi quasi repudiandae
+              quam hic quo, qui cumque nam voluptates, ipsam, tempora eaque
+              numquam eligendi.
+            </p>
+            <section>
+              <ul class="contact__ul">
+                <li class="contact__li">
+                  <a href="https://twitter.com/home">
+                    <i class="fab fa-twitter contact-social-icon"></i>@</a
+                  >
+                </li>
+                <li class="contact__li">
+                  <a href="https://github.com/gsolange/Portafolio">
+                    <i class="fab fa-github-alt contact-social-icon"></i
+                    >gsolange</a
+                  >
+                </li>
+                <li class="contact__li">
+                  <a href="https://www.linkedin.com/in/nsolangegutierrez/">
+                    <i class="fab fa-linkedin-in contact-social-icon"></i
+                    >/nsolangegutierrez</a
+                  >
+                </li>
+                <li class="contact__li">
+                  <a href="mailto:gnsolange@gmail.com">
+                    <i class="fas fa-envelope contact-social-icon"></i
+                    >gnsolange@gmail.com</a
+                  >
+                </li>
+              </ul>
+            </section>
+          </section>
+          <section class="contact__right">
+            <h2 class="contact__lefttittle">Escribime</h2>
+            <form action="">
+              <section class="form-fila">
+                <article class="name-fila">
+                  <label for="presentation__name">Nombre</label
+                  ><input
+                    class="name-fila-input"
+                    type="text"
+                    placeholder="p. ej.: ADA"
+                  />
+                </article>
+                <article class="name-fila">
+                  <label for="presentation__lastname">Apellido</label
+                  ><input
+                    class="name-fila-input"
+                    type="text"
+                    placeholder="p. ej.: ADA"
+                  />
+                </article>
+              </section>
+              <section class="form-column">
+                <label for="email">E-mail</label>
+                <input type="text" placeholder="p.ej.:adalove" />
+                <label for="message">Mensaje</label>
+                <input type="text" placeholder="p.ej.:adalove" />
+                <button type="submit">Enviar</button>
+              </section>
+            </form>
+          </section>
         </section>
       </section>
-      <section class="contact__right">
-        <figure>
-          <img
-            src="img/seccion-en-construccion.png"
-            alt="Seccion En Construccion"
-          />
-        </figure>
-      </section>
+    </main>
+    <footer>
+      <nav class="footer__childcontainer">
+        <ul class="footer__list">
+          <li class="footer__childlist">
+            <a href="#" class="header__a">HOLA</a>
+          </li>
+          <li class="footer__childlist">
+            <a href="#knowledge" class="header__a">CONOCIMIENTOS</a>
+          </li>
+          <li class="footer__childlist">
+            <a href="#project" class="header__a">PROYECTOS</a>
+          </li>
+          <li class="footer__childlist">
+            <a href="#contact" class="header__a">CONTACTO</a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="footericon__childcontainer">
+        <ul class="footer__ul">
+          <li class="footer__li">
+            <a href=""> <i class="fab fa-twitter contact-social-icon"></i></a>
+          </li>
+          <li class="footer__li">
+            <a href="">
+              <i class="fab fa-github-alt contact-social-icon"></i
+            ></a>
+          </li>
+          <li class="footer__li">
+            <a href="">
+              <i class="fab fa-linkedin-in contact-social-icon"></i
+            ></a>
+          </li>
+          <li class="footer__li">
+            <a href=""> <i class="fas fa-envelope contact-social-icon"></i></a>
+          </li>
+        </ul>
+        <p>Hecho con ❤️ por Solcito</p>
+      </nav>
     </footer>
   </body>
 </html>
