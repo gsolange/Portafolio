@@ -58,10 +58,16 @@ header {
   border: none;
 }
 
+.button__purple:hover {
+  color: rgba(255, 255, 255, 1) !important;
+  box-shadow: 0 4px 10px rgba(49, 138, 172, 1);
+  transition: all 0.2s ease;
+}
+
 
 .aboutme__maincontainer {
   display: flex;
-  padding: 9% 20%;
+  padding: 10% 20% 6% 20%;
   text-align: center;
   justify-content: space-evenly;
 
@@ -94,7 +100,7 @@ header {
 .aboutme__what {
   color: dimgrey;
   font-size: 16px;
-  line-height: 70px;
+  line-height: 30px;
 }
 
 .aboutme__img {
@@ -105,8 +111,9 @@ header {
 }
 
 .aboutme__img img {
-  width: 700px;
-  height: 500px;
+  width: 75%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .aboutme__maincontainer .aboutme__childcontainer .button__purple {
@@ -218,6 +225,9 @@ header {
   font-size: 20px;
   font-weight: 300;
   max-width: 800px;
+  background-image: linear-gradient(to left, violet, rgb(54, 214, 246), violet);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .quote__author {
@@ -350,7 +360,7 @@ header {
   line-height: 1.4;
 }
 
-.contact__li a i {
+.contact__li a i, .fa-brands {
   color: hotpink;
   margin: 15px 15px 15px 40px;
 }

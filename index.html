@@ -1,351 +1,268 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
-    >
-    <link
-      rel="stylesheet"
-      href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"
-    >
-    <link
-      href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAABEREQABEAAAAAAAAAARAAAAAAAAAAEQAAAAAAAAABEAAAAAAAAAARAAAAAAAAARAAAAAAAAARAAAAAAAAARAAAAAAAAARAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-      rel="icon"
-      type="image/x-icon"
-    >
-    <link rel="stylesheet" href="src/style.css" >
-    <title>Portafolio de Solange Gutierrez</title>
-  </head>
-  <body>
-    <header class="header__maincontainer">
-      <nav class="header__childcontainer">
-        <ul class="header__list">
-          <li class="header__childlist">
-            <a aria-label="Link hacia HOLA" href="#" class="header__a">HOLA</a>
-          </li>
-          <li class="header__childlist">
-            <a
-              aria-label="Link hacia CONOCIMIENTOS"
-              href="#knowledge"
-              class="header__a"
-              >CONOCIMIENTOS</a
-            >
-          </li>
-          <li class="header__childlist">
-            <a
-              aria-label="Link hacia PROYECTOS"
-              href="#project"
-              class="header__a"
-              >PROYECTOS</a
-            >
-          </li>
-          <li class="header__childlist">
-            <button class="button__purple button__formsend" type="submit">CONTACTO</button>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <!-- About Me -->
-      <section class="aboutme__maincontainer" id="aboutme">
-        <div class="aboutme__childcontainer">
-          <p class="aboutme__hi">¡Hola! Soy</p>
-          <h1 class="aboutme__name">Ada Lovelace</h1>
-          <p class="aboutme__what">Desarrolladora, guitarrista y fan de las matemáticas</p>
-          <button class="button__purple button__formsend" type="submit">LO QUE HAGO</button>
-        </div>
-        <figure class="aboutme__img" >
-          <img src="/img/img_aboutme.jpg" alt="Imagen de Chica Caminando" >
-        </figure>
-      </section>
-      <!-- Knowledge -->
-      <section class="knowledge__maincontainter" id="knowledge">
-        <div class="knowledge__childcontainer">
-          <h2 class="knowledge__title">Mis conocimientos</h2>
-          <p class="knowledge__what">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
-            eaque neque molestias consequuntur vel ab quas architecto.
-          </p>
-          <div class="knowledge__grid">
-            <div class="knowledge__gridchild">
-              <i class="devicon-html5-plain colored skill-icon"></i>
-              <p class="knowledge__titlegrid">HTML 5</p>
-            </div>
-            <div class="knowledge__gridchild">
-              <i class="devicon-css3-plain colored skill-icon"></i>
-              <p class="knowledge__titlegrid">CSS 3</p>
-            </div>
-            <div class="knowledge__gridchild">
-              <i class="devicon-sass-plain colored skill-icon"></i>
-              <p class="knowledge__titlegrid">Sass</p>
-            </div>
-            <div class="knowledge__gridchild">
-              <i class="devicon-javascript-plain colored skill-icon"></i>
-              <p class="knowledge__titlegrid">JavaScript</p>
-            </div>
-            <div class="knowledge__gridchild">
-              <i class="devicon-react-plain colored skill-icon"></i>
-              <p class="knowledge__titlegrid">React</p>
-            </div>
-            <div class="knowledge__gridchild">
-              <i class="devicon-git-plain colored skill-icon"></i>
-              <p class="knowledge__titlegrid">GIT</p>
-            </div>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <link rel="stylesheet"
+    href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+  <link
+    href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAABEREQABEAAAAAAAAAARAAAAAAAAAAEQAAAAAAAAABEAAAAAAAAAARAAAAAAAAARAAAAAAAAARAAAAAAAAARAAAAAAAAARAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+    rel="icon" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="src/style.css">
+  <title>Portafolio de Solange Gutierrez</title>
+</head>
+
+<body>
+  <header class="header__maincontainer">
+    <nav class="header__childcontainer">
+      <ul class="header__list">
+        <li class="header__childlist">
+          <a aria-label="Link hacia HOLA" href="#" class="header__a">HOLA</a>
+        </li>
+        <li class="header__childlist">
+          <a aria-label="Link hacia CONOCIMIENTOS" href="#knowledge" class="header__a">CONOCIMIENTOS</a>
+        </li>
+        <li class="header__childlist">
+          <a aria-label="Link hacia PROYECTOS" href="#project" class="header__a">PROYECTOS</a>
+        </li>
+        <li class="header__childlist">
+          <a href="#contact"><button class="button__purple button__formsend" type="submit">CONTACTO</button></a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <!-- About Me -->
+    <section class="aboutme__maincontainer" id="aboutme">
+      <div class="aboutme__childcontainer">
+        <p class="aboutme__hi">¡Hola! Soy</p>
+        <h1 class="aboutme__name">Solange Gutiérrez</h1>
+        <p class="aboutme__what">Aprendiz en Desarrollo Web & "Girl Gamer" </p>
+        <a href="#project"><button class="button__purple button__formsend" type="submit">LO QUE HAGO</button></a>
+      </div>
+      <figure class="aboutme__img">
+        <img src="/img/img_aboutme.jpg" alt="Imagen de Chica Caminando">
+      </figure>
+    </section>
+    <!-- Knowledge -->
+    <section class="knowledge__maincontainter" id="knowledge">
+      <div class="knowledge__childcontainer">
+        <h2 class="knowledge__title">Mis conocimientos</h2>
+        <p class="knowledge__what">
+          Actualmente tengo varios conocimientos añadidos a lo largo de mi vida en el mundo IT. Encontrarás aquí varias
+          de ellas:
+        </p>
+        <div class="knowledge__grid">
+          <div class="knowledge__gridchild">
+            <i class="devicon-html5-plain colored skill-icon"></i>
+            <p class="knowledge__titlegrid">HTML 5</p>
           </div>
-        </div>
-      </section>
-      <!-- Quote -->
-      <section class="quote__maincontainer" id="quote">
-        <i class="fas fa-quote-right quote-icon"></i>
-        <blockquote>
-          <p class="quote__what">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi
-            quaerat aspernatur laboriosam doloremque iste perspiciatis veniam
-            culpa beatae magni quo natus nostrum, laudantium exercitationem sit
-            minima aut totam praesentium aliquam.
-          </p>
-        </blockquote>
-        <h2 class="quote__author">Someone</h2>
-      </section>
-      <!-- Proyect -->
-      <section class="project__maincontainer" id="project">
-        <div class="project__mainchild">
-          <h2 class="project__title">Mis proyectos</h2>
-          <p class="project__what">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quo
-            nobis voluptatum tenetur! Id, nesciunt?
-          </p>
-          <div class="project__maingrid">
-            <a class="project__flip" href="#">
-              <figure class="project__a project__flipBox">
-                <img
-                  src="img/Portafolio.png"
-                  alt="Icono grande de Portafolio"
-                  class="project__img"
-                >
-                <figcaption class="project__name">Portafolio</figcaption>
-              </figure>
-            </a>
-            <a class="project__flip" href="https://rickandmorty-adaitw.vercel.app/">
-              <figure class="project__a project__flipBox">
-                <img
-                  src="img/Rick-n-Morty.webp"
-                  alt="Imagen grande de Pagina de Rick-n-Morty"
-                  class="project__img"
-                >
-                <figcaption class="project__name">
-                  Rick and Morty
-                </figcaption>
-              </figure>
-            </a>
-            <a class="project__flip" href="https://marketliebre-opal.vercel.app/">
-              <figure class="project__a project__flipBox">
-                <img
-                  src="img/MLiebre.png"
-                  alt="Imagen grande de Match 3"
-                  class="project__img"
-                >
-                <figcaption class="project__name">Mercado Liebre</figcaption>
-              </figure>
-            </a>
-            <a class="project__flip " href="#">
-              <figure class="project__a project__flipBox">
-                <img
-                  class="project__img"
-                  src="img/Control de Gastos.png"
-                  alt="Imagen grande de Controlador de Gastos"
-                >
-                <figcaption class="project__name">
-                  Controlador de gastos
-                </figcaption>
-              </figure>
-            </a>
-            <a class="project__flip" href="#">
-              <figure class="project__a project__flipBox">
-                <img
-                  class="project__img"
-                  src="img/Reuniones.png"
-                  alt="Imagen grande de Administrador de reuniones"
-                >
-                <figcaption class="project__name">
-                  Administrador de reuniones
-                </figcaption>
-              </figure>
-            </a>
-            <a class="project__flip" href="#">
-              <figure class="project__a project__flipBox">
-                <img
-                  class="project__img"
-                  src="img/App.png"
-                  alt="Imagen grande de Todo app"
-                >
-                <figcaption class="project__name">Todo app</figcaption>
-              </figure>
-            </a>
-            <a class="project__flip" href="#">
-              <figure class="project__a project__flipBox">
-                <img
-                  class="project__img"
-                  src="img/Pelicula.png"
-                  alt="Imagen grande de Buscador de peliculas"
-                >
-                <figcaption class="project__name">
-                  Buscador de películas
-                </figcaption>
-              </figure>
-            </a>
+          <div class="knowledge__gridchild">
+            <i class="devicon-css3-plain colored skill-icon"></i>
+            <p class="knowledge__titlegrid">CSS 3</p>
           </div>
-        </div>
-      </section>
-      <!-- Contact -->
-      <div class="background" id="contact">
-        <div class="contact__maincontainer contact__borderanimation">
-          <section class="contact__left">
-            <h2 class="contact__lefttitle">Contactame</h2>
-            <p class="contact__leftdescription">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quo
-              nobis voluptatum tenetur! Id, nesciunt? Modi quasi repudiandae
-              quam hic quo, qui cumque nam voluptates, ipsam, tempora eaque
-              numquam eligendi.
-            </p>
-            <div>
-              <ul class="contact__ul">
-                <li class="contact__li">
-                  <a
-                    aria-label="Link hacia TWITTER"
-                    href="https://twitter.com/home"
-                  >
-                    <i class="fab fa-twitter contact-social-icon"></i>@</a
-                  >
-                </li>
-                <li class="contact__li">
-                  <a
-                    aria-label="Link hacia GITHUB"
-                    href="https://github.com/gsolange/Portafolio"
-                  >
-                    <i class="fab fa-github-alt contact-social-icon"></i
-                    >gsolange</a
-                  >
-                </li>
-                <li class="contact__li">
-                  <a
-                    aria-label="Link hacia LINKEDIN"
-                    href="https://www.linkedin.com/in/nsolangegutierrez/"
-                  >
-                    <i class="fab fa-linkedin-in contact-social-icon"></i
-                    >/nsolangegutierrez</a
-                  >
-                </li>
-                <li class="contact__li">
-                  <a
-                    aria-label="Link hacia MAIL"
-                    href="mailto:gnsolange@gmail.com"
-                  >
-                    <i class="fas fa-envelope contact-social-icon"></i
-                    >gnsolange@gmail.com</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </section>
-          <section class="contact__right">
-            <h2 class="contact__lefttitle">Escribime</h2>
-            <form action="mailto:gnsolange@gmail.com"class="form__container" method="post" enctype="text/plain">
-              <div class="form__profile">
-                <div class="form__names">
-                  <label for="presentation__name">Nombre</label
-                  ><input
-                    class="form__names-input"
-                    type="text"
-                    placeholder="p. ej.: ADA"
-                    id="presentation__name"
-                  >
-                </div>
-                <div class="form__names">
-                  <label for="presentation__lastname">Apellido</label
-                  ><input
-                    class="form__names-input"
-                    type="text"
-                    placeholder="p. ej.: ADA"
-                    id="presentation__lastname"
-                  >
-                </div>
-              </div>
-              <div class="form-column">
-                <label for="email">E-mail</label>
-                <input type="text" placeholder="p.ej.:adalove" id="email" >
-                <label for="message">Mensaje</label>
-                <input type="text" placeholder="p.ej.:adalove" id="message" >
-              </div>
-              <input class="button__purple button__formsend" type="submit" value="Send">
-            </form>
-          </section>
+          <div class="knowledge__gridchild">
+            <i class="devicon-javascript-plain colored"></i>
+            <p class="knowledge__titlegrid">Javascript</p>
+          </div>
+          <div class="knowledge__gridchild">
+            <i class="devicon-postgresql-plain-wordmark colored"></i>
+            <p class="knowledge__titlegrid">PostgreSQL</p>
+          </div>
+          <div class="knowledge__gridchild">
+            <i class="devicon-microsoftsqlserver-plain-wordmark"></i>
+            <p class="knowledge__titlegrid">Microsoft SQL Server</p>
+          </div>
+          <div class="knowledge__gridchild">
+            <i class="devicon-docker-plain-wordmark colored"></i>
+            <p class="knowledge__titlegrid">Docker</p>
+          </div>
+          <div class="knowledge__gridchild">
+            <i class="devicon-unix-original"></i>
+            <p class="knowledge__titlegrid">Unix</p>
+          </div>
+          <div class="knowledge__gridchild">
+            <i class="devicon-trello-plain-wordmark colored"></i>
+            <p class="knowledge__titlegrid">Trello</p>
+          </div>
+          <div class="knowledge__gridchild">
+            <i class="devicon-putty-plain colored"></i>
+            <p class="knowledge__titlegrid">Putty</p>
+          </div>
         </div>
       </div>
-    </main>
-    <footer>
-      <nav class="footer__childcontainer">
-        <ul class="footer__list">
-          <li class="footer__childlist">
-            <a aria-label="Link hacia HOLA" href="#" class="header__a">HOLA</a>
-          </li>
-          <li class="footer__childlist">
-            <a
-              aria-label="Link hacia CONOCIMIENTOS"
-              href="#knowledge"
-              class="header__a"
-              >CONOCIMIENTOS</a
-            >
-          </li>
-          <li class="footer__childlist">
-            <a
-              aria-label="Link hacia PROYECTOS"
-              href="#project"
-              class="header__a"
-              >PROYECTOS</a
-            >
-          </li>
-          <li class="footer__childlist">
-            <a
-              aria-label="Link hacia CONTACTO"
-              href="#contact"
-              class="header__a"
-              >CONTACTO</a
-            >
-          </li>
-        </ul>
-      </nav>
-      <nav class="footericon__childcontainer">
-        <ul class="footer__ul">
-          <li class="footer__li">
-            <a aria-label="Link hacia TWITTER" href="https://twitter.com/home">
-              <i class="fab fa-twitter contact-social-icon"></i
-            ></a>
-          </li>
-          <li class="footer__li">
-            <a aria-label="Link hacia GITHUB" href="https://github.com/gsolange/Portafolio">
-              <i class="fab fa-github-alt contact-social-icon"></i
-            ></a>
-          </li>
-          <li class="footer__li">
-            <a aria-label="Link hacia LINKEDIN" href="https://www.linkedin.com/in/nsolangegutierrez/">
-              <i class="fab fa-linkedin-in contact-social-icon"></i
-            ></a>
-          </li>
-          <li class="footer__li">
-            <a aria-label="Link hacia MAIL" href="mailto:gnsolange@gmail.com">
-              <i class="fas fa-envelope contact-social-icon"></i
-            ></a>
-          </li>
-        </ul>
-        <p>Hecho con ❤️ por Solcito</p>
-      </nav>
-    </footer>
-  </body>
+    </section>
+    <!-- Quote -->
+    <section class="quote__maincontainer" id="quote">
+      <i class="fas fa-quote-right quote-icon"></i>
+      <blockquote>
+        <p class="quote__what">
+          “Lo que haces hace una diferencia, y tienes que decidir qué tipo de diferencia quieres hacer.”
+        </p>
+      </blockquote>
+      <h2 class="quote__author">Jane Goodall</h2>
+    </section>
+    <!-- Proyect -->
+    <section class="project__maincontainer" id="project">
+      <div class="project__mainchild">
+        <h2 class="project__title">Mis proyectos</h2>
+        <p class="project__what">
+          Aquí encontrarás una lista de mis proyectos realizados hasta el momento. ¡Atentos porque pronto haré más!
+        </p>
+        <div class="project__maingrid">
+          <a class="project__flip" href="#">
+            <figure class="project__a project__flipBox">
+              <img src="img/Portafolio.png" alt="Icono grande de Portafolio" class="project__img">
+              <figcaption class="project__name">Portafolio</figcaption>
+            </figure>
+          </a>
+          <a class="project__flip" href="https://rickandmorty-adaitw.vercel.app/">
+            <figure class="project__a project__flipBox">
+              <img src="img/Rick-n-Morty.webp" alt="Imagen grande de Pagina de Rick-n-Morty" class="project__img">
+              <figcaption class="project__name">
+                Rick and Morty
+              </figcaption>
+            </figure>
+          </a>
+          <a class="project__flip" href="https://marketliebre-opal.vercel.app/">
+            <figure class="project__a project__flipBox">
+              <img src="img/MLiebre.png" alt="Imagen grande de Match 3" class="project__img">
+              <figcaption class="project__name">Mercado Liebre</figcaption>
+            </figure>
+          </a>
+          <a class="project__flip " href="#">
+            <figure class="project__a project__flipBox">
+              <img class="project__img" src="img/Control de Gastos.png" alt="Imagen grande de Controlador de Gastos">
+              <figcaption class="project__name">
+                Controlador de gastos
+              </figcaption>
+            </figure>
+          </a>
+          <a class="project__flip" href="#">
+            <figure class="project__a project__flipBox">
+              <img class="project__img" src="img/Reuniones.png" alt="Imagen grande de Administrador de reuniones">
+              <figcaption class="project__name">
+                Administrador de reuniones
+              </figcaption>
+            </figure>
+          </a>
+          <a class="project__flip" href="#">
+            <figure class="project__a project__flipBox">
+              <img class="project__img" src="img/App.png" alt="Imagen grande de Todo app">
+              <figcaption class="project__name">Todo app</figcaption>
+            </figure>
+          </a>
+          <!-- <a class="project__flip" href="#">
+            <figure class="project__a project__flipBox">
+              <img class="project__img" src="img/Pelicula.png" alt="Imagen grande de Buscador de peliculas">
+              <figcaption class="project__name">
+                Buscador de películas
+              </figcaption>
+            </figure>
+          </a> -->
+        </div>
+      </div>
+    </section>
+    <!-- Contact -->
+    <div class="background" id="contact">
+      <div class="contact__maincontainer contact__borderanimation">
+        <section class="contact__left">
+          <h2 class="contact__lefttitle">Contactame</h2>
+          <p class="contact__leftdescription">
+            Si mi trabajo es de tu agrado y creés que puedo ayudarte a impulsar tu negocio, no dudes en contactarme.
+          </p>
+          <div>
+            <ul class="contact__ul">
+              <li class="contact__li">
+                <a aria-label="Link hacia WHATSAPP"
+                  href="https://wa.me/541166377035?text=%C2%A1Hola!%20Me%20gustar%C3%ADa%20contactar%20contigo%20para%20iniciar%20un%20nuevo%20proyecto.%20%C2%A1Gracias!">
+                  <i class="fa-duotone fa-mobile"></i>+5491166377035</a>
+              </li>
+              <li class="contact__li">
+                <a aria-label="Link hacia GITHUB" href="https://github.com/gsolange/Portafolio">
+                  <i class="fab fa-github-alt contact-social-icon"></i>gsolange</a>
+              </li>
+              <li class="contact__li">
+                <a aria-label="Link hacia LINKEDIN" href="https://www.linkedin.com/in/nsolangegutierrez/">
+                  <i class="fab fa-linkedin-in contact-social-icon"></i>/nsolangegutierrez</a>
+              </li>
+              <li class="contact__li">
+                <a aria-label="Link hacia MAIL" href="mailto:gnsolange@gmail.com">
+                  <i class="fas fa-envelope contact-social-icon"></i>gnsolange@gmail.com</a>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="contact__right">
+          <h2 class="contact__lefttitle">Escribime</h2>
+          <form action="mailto:gnsolange@gmail.com" class="form__container" method="post" enctype="text/plain">
+            <div class="form__profile">
+              <div class="form__names">
+                <label for="presentation__name">Nombre</label><input class="form__names-input" type="text"
+                  placeholder="p. ej.: ADA" id="presentation__name">
+              </div>
+              <div class="form__names">
+                <label for="presentation__lastname">Apellido</label><input class="form__names-input" type="text"
+                  placeholder="p. ej.: ADA" id="presentation__lastname">
+              </div>
+            </div>
+            <div class="form-column">
+              <label for="email">E-mail</label>
+              <input type="text" placeholder="p.ej.:adalove" id="email">
+              <label for="message">Mensaje</label>
+              <input type="text" placeholder="p.ej.:adalove" id="message">
+            </div>
+            <input class="button__purple button__formsend" type="submit" value="Send">
+          </form>
+        </section>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <nav class="footer__childcontainer">
+      <ul class="footer__list">
+        <li class="footer__childlist">
+          <a aria-label="Link hacia HOLA" href="#" class="header__a">HOLA</a>
+        </li>
+        <li class="footer__childlist">
+          <a aria-label="Link hacia CONOCIMIENTOS" href="#knowledge" class="header__a">CONOCIMIENTOS</a>
+        </li>
+        <li class="footer__childlist">
+          <a aria-label="Link hacia PROYECTOS" href="#project" class="header__a">PROYECTOS</a>
+        </li>
+        <li class="footer__childlist">
+          <a aria-label="Link hacia CONTACTO" href="#contact" class="header__a">CONTACTO</a>
+        </li>
+      </ul>
+    </nav>
+    <nav class="footericon__childcontainer">
+      <ul class="footer__ul">
+        <li class="footer__li">
+          <a aria-label="Link hacia WHATSAPP"
+            href="https://wa.me/541166377035?text=%C2%A1Hola!%20Me%20gustar%C3%ADa%20contactar%20contigo%20para%20iniciar%20un%20nuevo%20proyecto.%20%C2%A1Gracias!">
+            <i class="fa-duotone fa-mobile"></i></a>
+        </li>
+        <li class="footer__li">
+          <a aria-label="Link hacia GITHUB" href="https://github.com/gsolange/Portafolio">
+            <i class="fab fa-github-alt contact-social-icon"></i></a>
+        </li>
+        <li class="footer__li">
+          <a aria-label="Link hacia LINKEDIN" href="https://www.linkedin.com/in/nsolangegutierrez/">
+            <i class="fab fa-linkedin-in contact-social-icon"></i></a>
+        </li>
+        <li class="footer__li">
+          <a aria-label="Link hacia MAIL" href="mailto:gnsolange@gmail.com">
+            <i class="fas fa-envelope contact-social-icon"></i></a>
+        </li>
+      </ul>
+      <p>Hecho con ❤️ por Solcito</p>
+    </nav>
+  </footer>
+</body>
+
 </html>
