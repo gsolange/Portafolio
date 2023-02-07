@@ -1,50 +1,52 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Solange Gutierrez</title>
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900&display=swap"
-      rel="stylesheet"
-      preload
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-      preload
-    />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
-      preload
-    />
+    >
     <link
       rel="stylesheet"
       href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"
-      preload
-    />
+    >
     <link
+      href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAABEREQABEAAAAAAAAAARAAAAAAAAAAEQAAAAAAAAABEAAAAAAAAAARAAAAAAAAARAAAAAAAAARAAAAAAAAARAAAAAAAAARAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
       rel="icon"
-      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>"
-    />
-    <link rel="stylesheet" href="src/style.css" preload />
+      type="image/x-icon"
+    >
+    <link rel="stylesheet" href="src/style.css" >
+    <title>Portafolio de Solange Gutierrez</title>
   </head>
   <body>
     <header class="header__maincontainer">
       <nav class="header__childcontainer">
         <ul class="header__list">
           <li class="header__childlist">
-            <a href="#" class="header__a">HOLA</a>
+            <a aria-label="Link hacia HOLA" href="#" class="header__a">HOLA</a>
           </li>
           <li class="header__childlist">
-            <a href="#knowledge" class="header__a">CONOCIMIENTOS</a>
+            <a
+              aria-label="Link hacia CONOCIMIENTOS"
+              href="#knowledge"
+              class="header__a"
+              >CONOCIMIENTOS</a
+            >
           </li>
           <li class="header__childlist">
-            <a href="#project" class="header__a">PROYECTOS</a>
+            <a
+              aria-label="Link hacia PROYECTOS"
+              href="#project"
+              class="header__a"
+              >PROYECTOS</a
+            >
           </li>
           <li class="header__childlist">
-            <a href="#contact" class="button__purple">CONTACTO</a>
+            <button class="button__purple button__formsend" type="submit">CONTACTO</button>
           </li>
         </ul>
       </nav>
@@ -55,17 +57,11 @@
         <div class="aboutme__childcontainer">
           <p class="aboutme__hi">¡Hola! Soy</p>
           <h1 class="aboutme__name">Ada Lovelace</h1>
-          <p class="aboutme__what">
-            Desarrolladora, guitarrista y fan de las matemáticas
-          </p>
-          <a href="#projects" class="button__purple">LO QUE HAGO</a>
+          <p class="aboutme__what">Desarrolladora, guitarrista y fan de las matemáticas</p>
+          <button class="button__purple button__formsend" type="submit">LO QUE HAGO</button>
         </div>
-        <figure>
-          <img
-            src="/img/picture1.svg"
-            alt="Imagen de Chica Caminando"
-            class="aboutme__img"
-          />
+        <figure class="aboutme__img" >
+          <img src="/img/img_aboutme.jpg" alt="Imagen de Chica Caminando" >
         </figure>
       </section>
       <!-- Knowledge -->
@@ -120,199 +116,232 @@
       <!-- Proyect -->
       <section class="project__maincontainer" id="project">
         <div class="project__mainchild">
-          <h2 class="project__tittle">Mis proyectos</h2>
+          <h2 class="project__title">Mis proyectos</h2>
           <p class="project__what">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quo
             nobis voluptatum tenetur! Id, nesciunt?
           </p>
           <div class="project__maingrid">
-            <figure class="project__a">
-              <a href="#">
+            <a class="project__flip" href="#">
+              <figure class="project__a project__flipBox">
                 <img
-                  src="img/undraw_coffee_with_friends_3cbj.svg"
+                  src="img/Portafolio.png"
                   alt="Icono grande de Portafolio"
                   class="project__img"
-                />
+                >
                 <figcaption class="project__name">Portafolio</figcaption>
-              </a>
-            </figure>
-            <figure class="project__a">
-              <a href="#">
+              </figure>
+            </a>
+            <a class="project__flip" href="https://rickandmorty-adaitw.vercel.app/">
+              <figure class="project__a project__flipBox">
                 <img
-                  src="img/undraw_off_road_re_leme.svg"
-                  alt="Imagen grande de Generador de Memes"
+                  src="img/Rick-n-Morty.webp"
+                  alt="Imagen grande de Pagina de Rick-n-Morty"
                   class="project__img"
-                />
+                >
                 <figcaption class="project__name">
-                  Generador de memes
+                  Rick and Morty
                 </figcaption>
-              </a>
-            </figure>
-            <figure class="project__a">
-              <a href="#">
+              </figure>
+            </a>
+            <a class="project__flip" href="https://marketliebre-opal.vercel.app/">
+              <figure class="project__a project__flipBox">
                 <img
-                  src="img/undraw_coffee_with_friends_3cbj.svg"
+                  src="img/MLiebre.png"
                   alt="Imagen grande de Match 3"
                   class="project__img"
-                />
-                <figcaption class="project__name">Match 3</figcaption>
-              </a>
-            </figure>
-            <figure class="project__a">
-              <a href="#">
+                >
+                <figcaption class="project__name">Mercado Liebre</figcaption>
+              </figure>
+            </a>
+            <a class="project__flip " href="#">
+              <figure class="project__a project__flipBox">
                 <img
-                  src="img/undraw_wait_in_line_o2aq.svg"
-                  alt="Imagen grande de Controlador de Gastos"
                   class="project__img"
-                />
+                  src="img/Control de Gastos.png"
+                  alt="Imagen grande de Controlador de Gastos"
+                >
                 <figcaption class="project__name">
                   Controlador de gastos
                 </figcaption>
-              </a>
-            </figure>
-            <figure class="project__a">
-              <a href="#">
+              </figure>
+            </a>
+            <a class="project__flip" href="#">
+              <figure class="project__a project__flipBox">
                 <img
-                  src="img/undraw_off_road_re_leme.svg"
-                  alt="Imagen grande de Administrador de reuniones"
                   class="project__img"
-                />
+                  src="img/Reuniones.png"
+                  alt="Imagen grande de Administrador de reuniones"
+                >
                 <figcaption class="project__name">
                   Administrador de reuniones
                 </figcaption>
-              </a>
-            </figure>
-            <figure class="project__a">
-              <a href="#">
+              </figure>
+            </a>
+            <a class="project__flip" href="#">
+              <figure class="project__a project__flipBox">
                 <img
-                  src="img/undraw_upgrade_re_gano.svg"
+                  class="project__img"
+                  src="img/App.png"
                   alt="Imagen grande de Todo app"
-                  class="project__img"
-                />
+                >
                 <figcaption class="project__name">Todo app</figcaption>
-              </a>
-            </figure>
-            <figure class="project__a">
-              <a href="#">
+              </figure>
+            </a>
+            <a class="project__flip" href="#">
+              <figure class="project__a project__flipBox">
                 <img
-                  src="img/undraw_wait_in_line_o2aq.svg"
-                  alt="Imagen grande de Buscador de peliculas"
                   class="project__img"
-                />
+                  src="img/Pelicula.png"
+                  alt="Imagen grande de Buscador de peliculas"
+                >
                 <figcaption class="project__name">
                   Buscador de películas
                 </figcaption>
-              </a>
-            </figure>
+              </figure>
+            </a>
           </div>
         </div>
       </section>
       <!-- Contact -->
-      <section class="background" id="contact">
-        <section class="contact__maincontainer">
+      <div class="background" id="contact">
+        <div class="contact__maincontainer contact__borderanimation">
           <section class="contact__left">
-            <h2 class="contact__lefttittle">Contactame</h2>
+            <h2 class="contact__lefttitle">Contactame</h2>
             <p class="contact__leftdescription">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quo
               nobis voluptatum tenetur! Id, nesciunt? Modi quasi repudiandae
               quam hic quo, qui cumque nam voluptates, ipsam, tempora eaque
               numquam eligendi.
             </p>
-            <section>
+            <div>
               <ul class="contact__ul">
                 <li class="contact__li">
-                  <a href="https://twitter.com/home">
+                  <a
+                    aria-label="Link hacia TWITTER"
+                    href="https://twitter.com/home"
+                  >
                     <i class="fab fa-twitter contact-social-icon"></i>@</a
                   >
                 </li>
                 <li class="contact__li">
-                  <a href="https://github.com/gsolange/Portafolio">
+                  <a
+                    aria-label="Link hacia GITHUB"
+                    href="https://github.com/gsolange/Portafolio"
+                  >
                     <i class="fab fa-github-alt contact-social-icon"></i
                     >gsolange</a
                   >
                 </li>
                 <li class="contact__li">
-                  <a href="https://www.linkedin.com/in/nsolangegutierrez/">
+                  <a
+                    aria-label="Link hacia LINKEDIN"
+                    href="https://www.linkedin.com/in/nsolangegutierrez/"
+                  >
                     <i class="fab fa-linkedin-in contact-social-icon"></i
                     >/nsolangegutierrez</a
                   >
                 </li>
                 <li class="contact__li">
-                  <a href="mailto:gnsolange@gmail.com">
+                  <a
+                    aria-label="Link hacia MAIL"
+                    href="mailto:gnsolange@gmail.com"
+                  >
                     <i class="fas fa-envelope contact-social-icon"></i
                     >gnsolange@gmail.com</a
                   >
                 </li>
               </ul>
-            </section>
+            </div>
           </section>
           <section class="contact__right">
-            <h2 class="contact__lefttittle">Escribime</h2>
-            <form action="">
-              <section class="form-fila">
-                <article class="name-fila">
+            <h2 class="contact__lefttitle">Escribime</h2>
+            <form class="form__container" action="post">
+              <div class="form__profile">
+                <div class="form__names">
                   <label for="presentation__name">Nombre</label
                   ><input
-                    class="name-fila-input"
+                    class="form__names-input"
                     type="text"
                     placeholder="p. ej.: ADA"
-                  />
-                </article>
-                <article class="name-fila">
+                    id="presentation__name"
+                  >
+                </div>
+                <div class="form__names">
                   <label for="presentation__lastname">Apellido</label
                   ><input
-                    class="name-fila-input"
+                    class="form__names-input"
                     type="text"
                     placeholder="p. ej.: ADA"
-                  />
-                </article>
-              </section>
-              <section class="form-column">
+                    id="presentation__lastname"
+                  >
+                </div>
+              </div>
+              <div class="form-column">
                 <label for="email">E-mail</label>
-                <input type="text" placeholder="p.ej.:adalove" />
+                <input type="text" placeholder="p.ej.:adalove" id="email" >
                 <label for="message">Mensaje</label>
-                <input type="text" placeholder="p.ej.:adalove" />
-                <button type="submit">Enviar</button>
-              </section>
+                <input type="text" placeholder="p.ej.:adalove" id="message" >
+              </div>
+              <button class="button__purple button__formsend" type="submit">Enviar</button>
             </form>
           </section>
-        </section>
-      </section>
+        </div>
+      </div>
     </main>
     <footer>
       <nav class="footer__childcontainer">
         <ul class="footer__list">
           <li class="footer__childlist">
-            <a href="#" class="header__a">HOLA</a>
+            <a aria-label="Link hacia HOLA" href="#" class="header__a">HOLA</a>
           </li>
           <li class="footer__childlist">
-            <a href="#knowledge" class="header__a">CONOCIMIENTOS</a>
+            <a
+              aria-label="Link hacia CONOCIMIENTOS"
+              href="#knowledge"
+              class="header__a"
+              >CONOCIMIENTOS</a
+            >
           </li>
           <li class="footer__childlist">
-            <a href="#project" class="header__a">PROYECTOS</a>
+            <a
+              aria-label="Link hacia PROYECTOS"
+              href="#project"
+              class="header__a"
+              >PROYECTOS</a
+            >
           </li>
           <li class="footer__childlist">
-            <a href="#contact" class="header__a">CONTACTO</a>
+            <a
+              aria-label="Link hacia CONTACTO"
+              href="#contact"
+              class="header__a"
+              >CONTACTO</a
+            >
           </li>
         </ul>
       </nav>
       <nav class="footericon__childcontainer">
         <ul class="footer__ul">
           <li class="footer__li">
-            <a href=""> <i class="fab fa-twitter contact-social-icon"></i></a>
+            <a aria-label="Link hacia TWITTER" href="https://twitter.com/home">
+              <i class="fab fa-twitter contact-social-icon"></i
+            ></a>
           </li>
           <li class="footer__li">
-            <a href="">
+            <a aria-label="Link hacia GITHUB" href="https://github.com/gsolange/Portafolio">
               <i class="fab fa-github-alt contact-social-icon"></i
             ></a>
           </li>
           <li class="footer__li">
-            <a href="">
+            <a aria-label="Link hacia LINKEDIN" href="https://www.linkedin.com/in/nsolangegutierrez/">
               <i class="fab fa-linkedin-in contact-social-icon"></i
             ></a>
           </li>
           <li class="footer__li">
-            <a href=""> <i class="fas fa-envelope contact-social-icon"></i></a>
+            <a aria-label="Link hacia MAIL" href="mailto:gnsolange@gmail.com">
+              <i class="fas fa-envelope contact-social-icon"></i
+            ></a>
           </li>
         </ul>
         <p>Hecho con ❤️ por Solcito</p>
